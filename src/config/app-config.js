@@ -3,8 +3,8 @@ const CONFIG = {
     BASE_URL: "http://localhost:3000",
   },
   production: {
-    BASE_URL: "http://localhost:3000",
+    BASE_URL: "https://screening-be.onrender.com",
   },
 };
 
-export default CONFIG[process.env.NODE_ENV];
+export default CONFIG[process.env.CONFIG_PROFILE];
