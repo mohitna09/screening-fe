@@ -20,7 +20,7 @@ To get started with the Vite application, follow these steps:
 
    ```
 
-   2. **Building the Application**:
+2. **Building the Application**:
 
    To create a production build of your application, run the following command:
 
