@@ -7,4 +7,4 @@ const CONFIG = {
   },
 };
 
-export default CONFIG[process.env.CONFIG_PROFILE];
+export default CONFIG[process.env.CONFIG_PROFILE || "development"];
