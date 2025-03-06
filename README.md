@@ -1,12 +1,49 @@
-# React + Vite
+# Vite Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Vite application that allows for fast development and optimized builds. Below are the instructions on how to get started, build the application, and configure it.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get started with the Vite application, follow these steps:
 
-## Expanding the ESLint configuration
+1. **Clone the repository**:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+
+
+   npm install
+
+   npm run dev
+
+
+   Building the Application
+   To create a production build of your application, run the following command:
+   ```
+
+bash
+Run
+Copy code
+npm run build
+This will generate optimized static files in the dist directory, which you can then deploy to your server.
+
+Configuration
+You can change the configuration of your Vite application using environment variables. Create a .env file in the root of your project and set the desired profile:
+
+env
+Run
+Copy code
+VITE_CONFIG_PROFILE=development
+or
+
+env
+Run
+Copy code
+VITE_CONFIG_PROFILE=production
+Make sure to restart the development server after changing the .env file for the changes to take effect.
+
+CORS Unblocking
+If you encounter CORS issues while making requests to your backend, you may need to use a CORS unblocker. This is necessary because the backend may only allow requests from specific origins.
+
+You can use browser extensions like "CORS Unblock" or "Allow CORS: Access-Control-Allow-Origin" to bypass these restrictions during development. However, for production, ensure that your backend is configured to allow requests from your application's origin.
