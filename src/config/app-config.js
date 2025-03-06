@@ -7,4 +7,4 @@ const CONFIG = {
   },
 };
 
-export default CONFIG[process.env.CONFIG_PROFILE || "development"];
+export default CONFIG[import.meta.env.VITE_CONFIG_PROFILE || "development"];
